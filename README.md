@@ -1,1 +1,1 @@
-# grav-theme-paguernon
+# Paguernon Theme for Grav CMS

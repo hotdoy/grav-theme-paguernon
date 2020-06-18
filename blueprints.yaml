@@ -1,0 +1,59 @@
+name: paguernon
+slug: paguernon
+type: plugin
+version: 0.1.0
+description: PAGUERNON theme for Grav CMS.
+icon: rebel
+author:
+  name: Calotte
+  email: info@calotte.ca
+homepage: https://github.com/calotte/grav-theme-paguernon
+keywords: grav, theme, paguernon, calotte
+bugs: https://github.com/hotdoy/grav-theme-paguernon/issues
+readme: https://github.com/hotdoy/grav-theme-paguernon/blob/develop/README.md
+license: MIT
+
+dependencies:
+  - { name: grav, version: '>=1.6.0' }
+
+form:
+  validation: loose
+  fields:
+
+    ga_tracking_id:
+      type: text
+      label: GA Tracking ID
+      help: Google Analytics Tracking ID
+      placeholder: 'UA-123456789-1'
+      description: Do not fill if you are using GTM
+
+    gtm_container_id:
+      type: text
+      label: GTM Container ID
+      help: Google Tag Manager Container ID
+      placeholder: 'GTM-ZXCVB00'
+
+    facebook_app_id:
+      type: text
+      label: Facebook App Id
+      placeholder: '123456789123456'
+      
+    twitter_site:
+      type: text
+      label: Twitter Site
+      placeholder: '@twitter_handle'
+
+    gmaps_key:
+      type: text
+      label: Google Maps API Key
+
+    gmaps_styles:
+      type: textarea
+      rows: 13
+      label: Snazzy Maps
+
+    organization_logo:
+      type: text
+      label: Organization Logo
+      help: The absolute path to the organization logo. The image must be 112x112px at minimum. And of jpg, png, or gif format.
+      placeholder: 'https://path/to/logo.png'

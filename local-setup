@@ -1,0 +1,17 @@
+FOLDER STRUCTURE
+
+	project
+		grav-admin
+		grav-theme
+		user
+
+SYMLINKS
+
+	webroot to admin
+	mklink /D D:\Dev\xampp\htdocs\paguernon D:\Dev\_PROJECTS\paguernon\grav-admin
+
+	admin to user
+	mklink /D D:\Dev\_PROJECTS\paguernon\grav-admin\user D:\Dev\_PROJECTS\paguernon\user
+
+	user to theme
+	mklink /D D:\Dev\_PROJECTS\paguernon\user\themes\paguernon D:\Dev\_PROJECTS\paguernon\grav-theme-paguernon
