@@ -102,6 +102,6 @@ li > p {
 }
 
 p a {
-  color: var(--color-hl);
+  color: inherit;
   text-decoration: underline;
 }

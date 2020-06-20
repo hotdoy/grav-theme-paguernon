@@ -3,9 +3,9 @@
 ============================================*/
 
 html {
-  --color-bg: #f1f1f1;
-  --color-fg: #313131;
-  --color-hl: #009688;
+  --color-bg: #FFF;
+  --color-fg: #000;
+  --color-hl: #3c62dc;
   --color-hl-inverted: #FFF;
 
   --width-tight: 735px;
@@ -47,26 +47,11 @@ html {
        url('../fonts/Inter/inter-v1-latin-regular.woff') format('woff'); 
 }
 
-@font-face {
-  font-family: 'Lexend Deca';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Lexend Deca Regular'), local('LexendDeca-Regular'),
-       url('../fonts/LexendDeca/lexend-deca-v1-latin-regular.woff2') format('woff2'), 
-       url('../fonts/LexendDeca/lexend-deca-v1-latin-regular.woff') format('woff'); 
-}
-
-
-
 html {
   --font-base: 'Inter', sans-serif;
-  --font-alt: 'Lexend Deca', serif;
+  --font-alt: 'Inter', sans-serif; 
   font-size: 16px;
   font-family: var(--font-base);
-}
-
-h1, h2, h3, blockquote {
-  font-family: var(--font-alt);
 }
 
 

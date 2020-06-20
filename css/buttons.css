@@ -27,69 +27,6 @@ a.btn-link:hover:after {
 
 
 
-
-/*DOWN*/
-
-a.btn-down {
-	user-select: none;
-	color: var(--color-hl);
-	font-family: var(--font-alt);
-	font-size: 14px
-	text-decoration: none;
-}
-
-a.btn-down:after {
-	content: "";
-	width: 10px;
-	height: 10px;
-	background-image: url(../images/buttons/arrow_down-blue.svg);
-	background-repeat: no-repeat;
-	background-size: contain;
-	display: inline-block;
-	user-select: none;
-	transform: translate(5px, 1px);
-	transition: all 0.2s;
-	text-decoration: none;
-}
-
-a.btn-down:hover:after {
-	transform: translate(5px, 3px);
-}
-
-
-
-
-
-/*EXT*/
-
-a.btn-ext {
-	user-select: none;
-	color: var(--color-hl);
-	font-family: var(--font-alt);
-	text-decoration: none;
-}
-
-a.btn-ext:after {
-	content: "";
-	width: 12px;
-	height: 12px;
-	background-image: url(../images/buttons/open_in_new-blue.svg);
-	background-repeat: no-repeat;
-	background-size: contain;
-	display: inline-block;
-	user-select: none;
-	transform: translate(7px, 1px);
-	transition: all 0.2s;
-}
-
-a.btn-ext:hover:after {
-	transform: translate(12px, 1px);
-}
-
-
-
-
-
 /*BACK*/
 
 a.btn-back {

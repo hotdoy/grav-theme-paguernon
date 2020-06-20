@@ -1,6 +1,6 @@
-const	b = document.body;
-const onTriggers = document.getElementsByClassName("header-panel__on");
-const offTriggers = document.getElementsByClassName("header-panel__off");
+const b = document.body;
+const onTriggers = document.getElementsByClassName("header__toggle-on");
+const offTriggers = document.getElementsByClassName("header__toggle-off");
 const lastOffset = 0;
 
 for (let onTrigger of onTriggers) {
@@ -14,12 +14,6 @@ for (let offTrigger of offTriggers) {
 		b.classList.remove("header-panel--on");
 	})
 }
-
-window.addEventListener('resize', function(){
-	if (window.innerWidth > 735 && b.classList.contains("header-panel--on")) {
-		b.classList.remove("header-panel--on");
-	}
-});
 
 window.addEventListener("scroll", function(){
 
