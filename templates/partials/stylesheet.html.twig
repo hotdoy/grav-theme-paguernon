@@ -1,10 +1,8 @@
-<link rel="preload" href="{{ url('theme://fonts/LexendDeca/lexend-deca-v1-latin-regular.woff2', true) }}" as="font" crossorigin>
 <link rel="preload" href="{{ url('theme://fonts/Inter/inter-v1-latin-regular.woff2', true) }}" as="font" crossorigin>
 
 {# INLINE #}
 {% do assets.addCss('theme://css/reset.css', { loading: 'inline' }) %}
 {% do assets.addCss('theme://css/loading.css', { loading : 'inline' }) %}
-{% do assets.addCss('theme://css/theme.css', { loading : 'inline' }) %}
 
 {# THEME #}
 {% do assets.addCss('theme://css/theme.css') %}
@@ -31,6 +29,9 @@
 {% do assets.addCss('theme://css/mailchimp.css') %}
 {% do assets.addCss('theme://css/footer.css') %}
 {% do assets.addCss('theme://css/announcement.css') %}
+
+{# PAGES #}
+{% do assets.addCss('theme://css/landing.css') %}
 
 {# CUSTOM #}
 {% do assets.addCss('theme://css/custom.css', 1) %}

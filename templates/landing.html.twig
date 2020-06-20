@@ -1,0 +1,22 @@
+{% extends 'partials/base.html.twig' %}
+{% block content %}
+
+	<section class="landing__header">
+
+		<div class="landing__header__media">
+			<div class="fill" data-reveal="reveal--scalein">
+				{{ page.media|first.html }}
+			</div>
+		</div>
+		
+		<div class="landing__header__content" data-auto-reveal>
+			{{ page.content|raw }}
+		</div>
+
+	</section>
+
+	{% for module in page.collection({ items: {'@self.modular':''}, 'order': {'by': 'folder', 'dir': 'asc'}}) %}
+	{{ module.content|raw }}
+	{% endfor %}
+
+{% endblock %}

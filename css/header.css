@@ -1,8 +1,7 @@
-
-.header__shim {
+/*.header__shim {
     position: relative;
     height: var(--header-heigth);
-}
+}*/
 
 .header__background {
     position: fixed;

@@ -12,21 +12,9 @@ html {
   --width-body: 1200px;
   --width-site: 1600px;
   --width-full: 1920px;
-  --gutter: 2rem;
-  --rhythm: 10rem;
+  --gutter: 32px;
+  --rhythm: 125px;
   --header-heigth: 5rem;
-}
-
-@media (max-width: 735px) {
-  html {
-    --rhythm: 8rem;
-  }
-}
-@media (max-width: 380px) {
-  html {
-    --rhythm: 6rem;
-    --gutter: 1rem;
-  }
 }
 
 
@@ -37,14 +25,41 @@ html {
 					FONTS 
 ============================================*/
 
+/* inter-200 - latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 200;
+  src: local(''),
+       url('../fonts/Inter/inter-v1-latin-200.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/Inter/inter-v1-latin-200.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 /* inter-regular - latin */
 @font-face {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   src: local(''),
-       url('../fonts/Inter/inter-v1-latin-regular.woff2') format('woff2'),
-       url('../fonts/Inter/inter-v1-latin-regular.woff') format('woff'); 
+       url('../fonts/Inter/inter-v1-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/Inter/inter-v1-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* inter-800 - latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  src: local(''),
+       url('../fonts/Inter/inter-v1-latin-800.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/Inter/inter-v1-latin-800.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* inter-900 - latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  src: local(''),
+       url('../fonts/Inter/inter-v1-latin-900.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/Inter/inter-v1-latin-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 html {
@@ -137,4 +152,12 @@ body {
 
 .rhythm {
   margin-top: var(--rhythm);
+}
+
+.fill {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
