@@ -106,7 +106,8 @@
     background-color: #000;
     color: #fff;
     transform: translateX(100vw);
-    transition: all 0.4s;
+    transition-property: transform;
+    transition-duration: 0.3s;
     transition-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
     z-index: 5001;
 }
@@ -138,7 +139,7 @@
 
 
 /*=======================================
-			DEPLOYED PANEL
+			PANEL DEPLOYMENT
 ========================================*/
 
 /*remove scroll*/

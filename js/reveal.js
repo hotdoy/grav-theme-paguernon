@@ -7,10 +7,10 @@ const Reveal = {
 
 	Reveal: function(e) {
 		const classes = Reveal.GetRevealClass(e)
-		e.classList.add(...classes);
 	    e.addEventListener('animationend', () =>{
 	    	e.classList.remove(Reveal.defaultHiddenClass);	
 	    })
+	    e.classList.add(...classes);
 	},
 
 
@@ -25,7 +25,6 @@ const Reveal = {
 
 	GetAutoRevealClass: function(e) {
 		if (!!e) {
-
 			let rawClass = e.dataset.autoReveal.length ? e.dataset.autoReveal : Reveal.defaultRevealClass;
 			let classArray = rawClass.split(" ");
 			return classArray;

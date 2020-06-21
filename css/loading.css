@@ -28,29 +28,18 @@ body.loaded #loading.transition {
 
 /*INTRO*/
 #loading.intro {
-	background-color: var(--color-hl);
+	background-color: black;
+	color: white;
 	z-index: 9999;	
-
 	display: flex;
 	justify-content: center;
 	align-items: center;
-}
-
-#loading.intro svg {
-	width: 100px;
-	color: white;
-	animation-name: intro;
-	animation-duration: 0.4s;
-}
-
-@keyframes intro {
-	0% { opacity: 0; transform: translateY(-15px); }
-	50% { opacity: 1; transform: translateY(10px); }
-	100% { opacity: 1; transform: translateY(0px); }
+	transition-property: transform visibility;
+	transition-duration: 0.3s; 
+	transition-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
 }
 
 body.loaded #loading.intro {
-	transition: all 0.2s; 
-	opacity: 0;
+	transform: translateY(-100%);
 	visibility: hidden;
 }
