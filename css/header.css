@@ -1,7 +1,8 @@
-/*.header__shim {
+.header__shim {
     position: relative;
-    height: var(--header-heigth);
-}*/
+    /*height: var(--header-heigth);*/
+    height: 0;
+}
 
 .header__background {
     position: fixed;
@@ -108,7 +109,7 @@
     transform: translateX(100vw);
     transition-property: transform;
     transition-duration: 0.3s;
-    transition-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+    transition-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000);
     z-index: 5001;
 }
 

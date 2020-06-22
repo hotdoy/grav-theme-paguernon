@@ -1,56 +1,25 @@
 /*LINK*/
 
 a.btn-link {
-	user-select: none;
+    position: relative;
+    display: inline-block;
+    margin: 10px 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    user-select: none;
 	color: var(--color-hl);
-	font-family: var(--font-alt);
 	text-decoration: none;
 }
 
 a.btn-link:after {
-	content: "";
-	width: 12px;
-	height: 12px;
-	background-image: url(../images/buttons/chevron_right-blue.svg);
-	background-repeat: no-repeat;
-	background-size: contain;
-	display: inline-block;
-	user-select: none;
-	transform: translate(5px, 1px);
-	transition: all 0.2s;
-}
-
-a.btn-link:hover:after {
-	transform: translate(10px, 1px);
-}
-
-
-
-
-/*BACK*/
-
-a.btn-back {
-	user-select: none;
-	color: var(--color-hl);
-	font-family: var(--font-alt);
-	text-decoration: none;
-}
-
-a.btn-back:before {	
-	content: "";
-	width: 12px;
-	height: 12px;
-	background-image: url(../images/buttons/chevron_left-blue.svg);
-	background-repeat: no-repeat;
-	background-size: contain;
-	display: inline-block;
-	user-select: none;
-	transform: translate(0px, 0px);
-	transition: all 0.2s;
-}
-
-a.btn-back:hover:before {
-	transform: translate(-5px, 0px);
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: var(--color-hl);
 }
 
 
@@ -73,13 +42,9 @@ a.btn-round,
     text-align: center;
 }
 
-a.btn-round:hover {
-	transform: translateY(-2px);
-}
+/*a.btn-round:hover {}*/
 
-a.btn-round:hover:active {
-	transform: translateY(0px);
-}
+/*a.btn-round:hover:active {}*/
 
 
 
@@ -99,10 +64,6 @@ a.btn-square,
     text-decoration: none;
 }
 
-a.btn-square:hover {
-	transform: translateY(-2px);
-}
+/*a.btn-square:hover {}*/
 
-a.btn-square:hover:active {
-	transform: translateY(0px);
-}
+/*a.btn-square:hover:active {}*/

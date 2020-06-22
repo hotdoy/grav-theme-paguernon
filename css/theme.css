@@ -5,10 +5,10 @@
 html {
   --color-bg: #FFF;
   --color-fg: #000;
-  --color-hl: #3c62dc;
+  --color-hl: #ff5722;
   --color-hl-inverted: #FFF;
 
-  --width-tight: 735px;
+  --width-tight: 835px;
   --width-body: 1200px;
   --width-site: 1600px;
   --width-full: 1920px;
@@ -104,6 +104,22 @@ body {
 /*FIX FIRST MODULE TOP MARGIN*/
 #content > .module:nth-child(1) {
     margin-top: calc(var(--rhythm) - var(--header-heigth)/2);
+}
+
+/*OPTIONALS*/
+.module.padded {
+  padding: var(--rhythm) 0 var(--rhythm) 0;
+  background-color: #000;
+  color: #fff;
+}
+
+.module.no_margin {
+  margin-top: 0;
+}
+
+.module.double_margin {
+  margin-top: calc(var(--rhythm)*2);
+  margin-bottom: var(--rhythm);
 }
 
 

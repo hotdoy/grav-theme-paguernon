@@ -22,7 +22,8 @@
 	}
 }
 
-.landing__header__media img {
+.landing__header__media img,
+.landing__header__media video {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;

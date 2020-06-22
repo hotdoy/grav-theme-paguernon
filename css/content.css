@@ -36,13 +36,13 @@
 	padding: 0;
 }
 
-
-
-
-
-/*OPTIONALS*/
-
-.content.padded {
-	padding: var(--rhythm) 0 var(--rhythm) 0;
-	background-color: #f1f1f1;
+.content blockquote p {
+    font-size: 48px;
+    line-height: 1;
+    font-weight: 900;
+}
+@media (min-width: 1200px) {
+	.content blockquote p {
+	    font-size: 100px;
+	}
 }

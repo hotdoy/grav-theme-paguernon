@@ -1,0 +1,30 @@
+/*SITE HEADER MODIFIER*/
+body.article .header__background{
+    transform: translateY(0);
+    opacity: 1;
+}
+body.article .header__shim {
+    height: var(--header-heigth);
+}
+
+
+
+
+
+/*ARTICLE*/
+.article__header {
+
+}
+
+.article__header__media {
+	position: relative;
+	height: 50vh;
+}
+
+
+.article__header__media img,
+.article__header__media video {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}

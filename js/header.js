@@ -1,7 +1,6 @@
 const b = document.body;
 const onTriggers = document.getElementsByClassName("header__toggle-on");
 const offTriggers = document.getElementsByClassName("header__toggle-off");
-const lastOffset = 0;
 
 for (let onTrigger of onTriggers) {
 	onTrigger.addEventListener("click", function(){
@@ -25,7 +24,6 @@ window.addEventListener("scroll", function(){
     	b.classList.remove("header--scrolled");
    	}
 
-   	lastOffset = currentOffset;
 }, false);
 
 
