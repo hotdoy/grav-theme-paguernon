@@ -1,11 +1,12 @@
-/*SITE HEADER MODIFIER*/
-body.article .header__background{
-    transform: translateY(0);
-    opacity: 1;
+/*SITE HEADER */
+.article #header{
+	color: white;
+
 }
-body.article .header__shim {
-    height: var(--header-heigth);
+.header--scrolled #header{
+	color: black;
 }
+
 
 
 
@@ -18,7 +19,7 @@ body.article .header__shim {
 
 .article__header__media {
 	position: relative;
-	height: 50vh;
+	height: calc(50vh);
 }
 
 
@@ -27,4 +28,20 @@ body.article .header__shim {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
+}
+
+.article__header__title {
+	padding: 0 var(--gutter);
+    width: 100%;
+    max-width: var(--width-tight);
+    margin: 2rem auto;
+    font-size: 48px;
+    line-height: 1;
+    font-weight: 900;
+}
+
+@media (min-width: 1200px) {
+	.article__header__title {
+	    font-size: 100px;
+	}
 }

@@ -6,18 +6,12 @@
 {% block content %}
 	<section class="article__header">
 
-		<div class="article__header__media">
-			<div class="fill" data-reveal>
+		<div class="article__header__media" data-reveal>
+			<div class="fill">
 				{{ selected_media.html('', selected_media_alt) }}
 			</div>
 		</div>
-
 		<h1 class="article__header__title" data-reveal>{{ page.title }}</h1>
-
-		{# @todo date #}
-
-		{# @todo taxonomy #}
-
 	</section>
 
 	<section class="module content" data-auto-reveal>

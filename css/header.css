@@ -123,11 +123,27 @@
 }
 
 .header__panel ul li {
+    
+    padding-right: 10%;
+    margin-top: 30px;
+    line-height: 1;
     opacity: 0;
     transform: translateX(20px); 
     transition-property: all;
     transition-delay: 0s;
     transition-duration: 0.2s;
+}
+@media (min-width: 1200px) {
+    .header__panel ul li {
+        width: 50vh;
+    }
+}
+
+@media (min-width: 1600px) {
+    .header__panel ul li {
+        width: 66vh;
+
+    }
 }
 
 .header__panel li a {

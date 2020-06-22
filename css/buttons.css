@@ -20,6 +20,19 @@ a.btn-link:after {
     height: 2px;
     width: 100%;
     background-color: var(--color-hl);
+
+    transition: height 0.2s;
+}
+
+a.btn-link:hover:after {
+    animation: hoverLink 0.7s cubic-bezier(0.32, 0.94, 0.6, 1);
+}
+
+@keyframes hoverLink {
+    0% {transform:scaleX(1);transform-origin:right}
+    50%{transform:scaleX(0);transform-origin:right}
+    51%{transform:scaleX(0);transform-origin:left}
+    100%{transform-origin:left;transform:scaleX(1)}
 }
 
 
