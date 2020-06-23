@@ -6,9 +6,11 @@
 {% block content %}
 	<section class="landing__header">
 		<div class="landing__header__media">
-			<div class="fill" data-reveal>
+			<div class="fill">
 				{{ selected_media.html('', selected_media_alt) }}
+				<div class="landing__media__veil fill" data-reveal="reveal--veil"></div>
 			</div>
+
 		</div>
 		<div class="landing__header__content" data-reveal>
 			{{ page.content|raw }}

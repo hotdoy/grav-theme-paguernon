@@ -52,11 +52,11 @@
 .collection .item__veil {
 	display: flex;
     align-items: flex-end;
-    padding: 3rem 2rem;
+    padding: 2rem;
 	background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
 }
 
 .collection .item__title {
 	color: #fff;
-	font-weight: 900;
+	
 }

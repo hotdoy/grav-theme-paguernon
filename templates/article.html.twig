@@ -4,14 +4,15 @@
 {% set selected_media_alt = selected_media_alt|default(page.header.selected_media_alt ?? '') %}
 
 {% block content %}
-	<section class="article__header">
 
-		<div class="article__header__media" data-reveal>
+	<section class="article__header">
+		<div class="article__header__media">
 			<div class="fill">
 				{{ selected_media.html('', selected_media_alt) }}
+				<div class="article__media__veil fill" data-reveal="reveal--veil"></div>
 			</div>
 		</div>
-		<h1 class="article__header__title" data-reveal>{{ page.title }}</h1>
+			<h1 class="article__header__title" data-reveal>{{ page.title }}</h1>
 	</section>
 
 	<section class="module content" data-auto-reveal>

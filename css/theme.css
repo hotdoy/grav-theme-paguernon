@@ -25,15 +25,6 @@ html {
 					FONTS 
 ============================================*/
 
-/* inter-200 - latin */
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 200;
-  src: local(''),
-       url('../fonts/Inter/inter-v1-latin-200.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/Inter/inter-v1-latin-200.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
 /* inter-regular - latin */
 @font-face {
   font-family: 'Inter';
@@ -61,10 +52,19 @@ html {
        url('../fonts/Inter/inter-v1-latin-900.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
        url('../fonts/Inter/inter-v1-latin-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
+/* yeseva-one-regular - latin */
+@font-face {
+  font-family: 'Yeseva One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Yeseva One Regular'), local('YesevaOne-Regular'),
+       url('../fonts/YesevaOne/yeseva-one-v14-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/YesevaOne/yeseva-one-v14-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 
 html {
   --font-base: 'Inter', sans-serif;
-  --font-alt: 'Inter', sans-serif; 
+  --font-alt: 'Yeseva One', serif; 
   font-size: 16px;
   font-family: var(--font-base);
 }
@@ -85,41 +85,6 @@ body {
 ::selection {
   background-color: var(--color-hl); 
   color: var(--color-hl-inverted);
-}
-
-
-
-
-
-/*===========================================
-					MODULES 
-============================================*/
-
-.module {
-  position: relative;
-  margin-top: var(--rhythm);
-  z-index: 1000;
-}
-
-/*FIX FIRST MODULE TOP MARGIN*/
-#content > .module:nth-child(1) {
-    margin-top: calc(var(--rhythm) - var(--header-heigth)/2);
-}
-
-/*OPTIONALS*/
-.module.padded {
-  padding: var(--rhythm) 0 var(--rhythm) 0;
-  background-color: #000;
-  color: #fff;
-}
-
-.module.no_margin {
-  margin-top: 0;
-}
-
-.module.double_margin {
-  margin-top: calc(var(--rhythm)*2);
-  margin-bottom: var(--rhythm);
 }
 
 
@@ -186,6 +151,6 @@ body {
           PAGE OPTIONALS
 ==========================================*/
 
-body.remove_footer_margin footer {
+.remove_footer_margin footer {
   margin-top: 0;
 }

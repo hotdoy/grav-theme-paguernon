@@ -1,4 +1,5 @@
 h1 {
+  font-family: var(--font-alt);
   font-size: 2rem;
   line-height: 1.4;
 }
@@ -9,7 +10,7 @@ h1 {
 }
 
 h2 {
-  font-weight: 900;
+  font-family: var(--font-alt);
   margin-top: 3rem;
   font-size: 1.5rem;
   line-height: 1.4;
