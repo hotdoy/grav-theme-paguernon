@@ -1,7 +1,13 @@
 fr:
     THEME:
         NAME: "paguernon"
+        ERROR:
+          TITLE: 404
+          CONTENT: Page Not Found
         
 en:
     THEME:
         NAME: "paguernon"
+        ERROR:
+          TITLE: 404
+          CONTENT: Page Not Found
