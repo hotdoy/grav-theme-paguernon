@@ -57,6 +57,7 @@
 }
 
 .collection .item__title {
+	font-family: var(--font-alt);
 	color: #fff;
 	
 }
