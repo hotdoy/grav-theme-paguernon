@@ -177,3 +177,15 @@ body {
   bottom: 0;
   left: 0;
 }
+
+
+
+
+
+/*======================================
+          PAGE OPTIONALS
+==========================================*/
+
+body.remove_footer_margin footer {
+  margin-top: 0;
+}

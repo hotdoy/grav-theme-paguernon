@@ -9,6 +9,10 @@
 	max-width: var(--width-tight);
 }
 
+.collection__content>*:nth-child(1) {
+	margin-top: 0;
+}
+
 .collection__ctn {
 	margin: 0 var(--gutter);
 }
