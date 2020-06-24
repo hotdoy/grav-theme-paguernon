@@ -8,11 +8,6 @@ form:
         content:
           fields:
 
-            content:
-                type: markdown
-                validate:
-                  type: textarea
-
             header.selected_media:
               label: Media
               type: pagemediaselect
