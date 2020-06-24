@@ -1,10 +1,10 @@
 {% set optional_classes = classes|default(page.header.optional_classes) %}
 
-<section class="module collection {{ optional_classes }}" data-reveal>
+<section class="module collection {{ optional_classes }}">
 
 	{# content #}
 	{% if page.content %}
-	<div class="collection__content">{{ page.content|raw }}</div>
+	<div class="collection__content" data-reveal>{{ page.content|raw }}</div>
 	{% endif %}
 
 	{# swiper #}

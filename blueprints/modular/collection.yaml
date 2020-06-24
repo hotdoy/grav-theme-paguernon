@@ -13,8 +13,11 @@ form:
 
             header.content.items:
               type: text
+              yaml: true
               label: items
               default: '@self.children'
+              validate:
+                type: yaml
 
             header.content.order.by:
               type: text
