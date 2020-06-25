@@ -9,11 +9,13 @@
 {% endset %}
 
 {% set description %}
-{% for meta in page.metadata %}
-{% if meta.name == 'description' %}
+{% if page.header.meta_description %}
+{{- page.header.meta_description -}}
+{% else %}
+{% for meta in page.metadata if meta.name == 'description' %}
 {{- meta.content -}}
-{% endif %}
 {% endfor %}
+{% endif %}
 {% endset %}
 
 {% set og_type = og_type|default('website') %}
