@@ -8,8 +8,7 @@ function updateStaticCache() {
     .then(function (cache) {
       return cache.addAll([
         '/user/themes/paguernon/fonts/Inter/inter-v1-latin-regular.woff2',
-        '/user/themes/paguernon/fonts/YesevaOne/yeseva-one-v14-latin-regular.woff2',        
-        '/offline'
+        '/user/themes/paguernon/fonts/YesevaOne/yeseva-one-v14-latin-regular.woff2',   
       ]);
     });
 };
