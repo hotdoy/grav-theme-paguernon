@@ -1,5 +1,7 @@
 (function () {
+
 	'use strict';
+
 	const InitCollection = function(){
 		let sel = '.collection .swiper-container';
 		let el = document.querySelectorAll(sel);
@@ -11,5 +13,7 @@
 			});
 		}
 	}
+
 	InitCollection();
+	
 })();
