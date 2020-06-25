@@ -3,7 +3,7 @@ fr:
         NAME: "paguernon"
         ERROR:
           TITLE: 404
-          CONTENT: Page Not Found
+          CONTENT: Page non trouvée
         
 en:
     THEME:
