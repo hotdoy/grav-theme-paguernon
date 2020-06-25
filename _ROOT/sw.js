@@ -7,8 +7,8 @@ function updateStaticCache() {
   return caches.open(version + staticCacheName)
     .then(function (cache) {
       return cache.addAll([
-        '/user/themes/davidraymond/fonts/Inter/inter-v1-latin-regular.woff2',   
-        '/user/themes/davidraymond/fonts/Garamond/cormorant-garamond-v7-latin-regular.woff2',        
+        '/user/themes/paguernon/fonts/Inter/inter-v1-latin-regular.woff2',
+        '/user/themes/paguernon/fonts/YesevaOne/yeseva-one-v14-latin-regular.woff2',        
         '/offline'
       ]);
     });
