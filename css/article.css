@@ -4,10 +4,14 @@
 .article__header {
 	display: flex;
 	width: 100%;
-	height: 100vh;
 	flex-wrap: wrap;
 	border-bottom: 1px solid #ebebeb;
+}
 
+@media (min-width: 1200px) {
+	.article__header {
+		height: 100vh;
+	}
 }
 
 /*MEDIA (LEFT)*/
@@ -20,7 +24,6 @@
 	background-color: black;
 }
 @media (min-width: 1200px) {
-
 	.article__header__media {
 		width: 50%;
 		height: 100vh;
@@ -46,12 +49,14 @@
 /*TITLE*/
 
 .article__header__title {
+	margin: var(--gutter) 0 var(--rhythm) 0;
 	position: relative;
 	width: 100%;
-    padding: var(--gutter);
+    padding: 0 var(--gutter);
 }
 @media (min-width: 1200px) {
 	.article__header__title {
+		margin: 0;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;

@@ -4,10 +4,14 @@
 .landing__header {
 	display: flex;
 	width: 100%;
-	height: 100vh;
 	flex-wrap: wrap;
 	border-bottom: 1px solid #ebebeb;
+}
 
+@media (min-width: 1200px) {
+	.landing__header {
+		height: 100vh;
+	}
 }
 
 /*MEDIA (LEFT)*/
@@ -47,17 +51,21 @@
 
 .landing__header__content {
 	position: relative;
+	margin: var(--gutter) 0 var(--rhythm) 0;
+	padding: 0 var(--gutter);
 	width: 100%;
-    padding: var(--gutter);
+    
 }
 @media (min-width: 1200px) {
 	.landing__header__content {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
+		margin: 0;
+		padding: var(--gutter) 10% var(--gutter) 10%;
 		width: 50%;
 	    height: 100%;
-	    padding: var(--gutter) 10% var(--gutter) 10%;
+	    
 	}
 }
 
