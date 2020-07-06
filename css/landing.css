@@ -14,7 +14,11 @@
 	}
 }
 
-/*MEDIA (LEFT)*/
+
+
+
+
+/*HEADER MEDIA*/
 
 .landing__header__media {
 	position: relative;
@@ -47,7 +51,7 @@
 
 
 
-/*CONTENT(RIGHT)*/
+/*HEADER CONTENT*/
 
 .landing__header__content {
 	position: relative;
@@ -85,7 +89,24 @@
 
 
 
-/*SITE HEADER*/
+/*OPTIONALS*/
+
+.small_title .landing__header__content h1 {
+    font-size: 32px;
+    line-height: 1;
+}
+@media (min-width: 1200px) {
+	.small_title .landing__header__content h1 {
+	font-size: 48px;
+	}
+}
+
+
+
+
+
+/*HEADER MODIFIER*/
+
 body.landing.header--scrolled .header__logo,
 body.landing.header--scrolled .header__toggle-on {
 	color: inherit;
@@ -108,7 +129,7 @@ body.landing .header__toggle-on {
 
 
 
-/*CUSTOM CONTENT*/
+/*CONTENT MODIFIER*/
 
 .landing h2 {
 	padding-right: 10%;

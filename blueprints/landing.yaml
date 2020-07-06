@@ -15,3 +15,13 @@ form:
             header.selected_media_alt:
               type: text
               label: Media Alt
+
+        advanced:
+          fields:
+            columns:
+              fields:
+                column1:
+                  fields:
+                    header.body_classes:
+                      markdown: true
+                      description: '```small_title```'
