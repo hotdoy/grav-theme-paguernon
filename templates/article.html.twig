@@ -8,7 +8,11 @@
 	<section class="article__header">
 		<div class="article__header__media">
 			<div class="fill">
+				{% if selected_media.type == 'video' %}
+				{{ selected_media.controls(0).autoplay(1).muted(1).loop(1).html('', selected_media_alt) }}
+				{% else %}
 				{{ selected_media.html('', selected_media_alt) }}
+				{% endif %}
 				<div class="article__media__veil fill" data-reveal="reveal--veil"></div>
 			</div>
 		</div>
