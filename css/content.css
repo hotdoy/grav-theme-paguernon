@@ -13,6 +13,10 @@
     border: none;
 }
 
+.content a:not([class]) {
+	color: var(--color-hl);
+}
+
 .content p img,
 .content p video {
 	margin: 0 auto 0 auto;
